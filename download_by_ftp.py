@@ -86,7 +86,7 @@ FUNCTION_MAP = {'species': download_species,
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('download', choices=FUNCTION_MAP.keys())
-    parser.add_argument('-save_path', type=str, default='/local2')
+    parser.add_argument('-save_path', type=str, default='data')
     parser.add_argument('-files', type=str, default='ARTVU,CHEAL', help="Comma separated list of EPPO codes or trays IDS to download")
     parser.add_argument('-img_type', type=str, default='jpegs', help="Type of the images: 'jpegs' or 'pngs'")
     args = parser.parse_args()
