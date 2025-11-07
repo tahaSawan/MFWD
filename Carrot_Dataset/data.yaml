@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 2
+names: ['Carrot', 'Weed']
+
+roboflow:
+  workspace: weeds-and-carrots
+  project: carrots-and-weeds
+  version: 6
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/weeds-and-carrots/carrots-and-weeds/dataset/6
